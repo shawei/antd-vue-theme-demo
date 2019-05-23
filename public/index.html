@@ -11,7 +11,17 @@
     <noscript>
       <strong>We're sorry but antd-vue-theme-demo doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
+    <!-- 引入提取的color.less文件 -->
+    <link rel="stylesheet/less" type="text/css" href="./color.less" />
+    <script>
+      window.less = {
+        async: false,
+        env: 'production'//production  development
+      };
+    </script>
     <div id="app"></div>
+    <!-- 引入less.js文件（放在最后） -->
+    <script src="https://cdn.bootcss.com/less.js/2.7.3/less.min.js"></script>
     <!-- built files will be auto injected -->
   </body>
 </html>
